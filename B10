@@ -1,0 +1,32 @@
+/*Write a C Program to input two angles sides of a triangle and find the third */
+
+// a^2 + b^2 = c^2
+
+////////////////////////////
+/// By Lindsay Voglewede ///
+////////////////////////////
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    //Declare Variables
+    float a;
+    float b;
+    float c;
+
+    //Ask user for Input
+    printf("Enter measurement of 1st side \n");
+    scanf("%f",&a);
+    printf("Enter measurement of 2nd side \n");
+    scanf("%f",&b);
+
+    //Mathematical Equations
+    c=sqrt((pow(a,2))+(pow(b,2)));
+
+    //Output
+    printf("The third side measurement is: %f",c);
+    return 0;
+}
